@@ -1,0 +1,41 @@
+
+body {
+    font-family:Arial;
+}
+
+
+#plate {
+    font-size:75px;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+
+#violations {
+    border:2px solid black;
+    margin-left:auto;
+    margin-right:auto;
+}    
+
+#violations td, #violations th {
+    padding:5px 25px;
+    border-bottom:1px solid black;
+}
+
+#violations th {
+    font-style:italic;
+}
+
+
+#top {
+    border-bottom:1px solid black;
+    text-align:center;
+}
+
+#topleft {
+    float:left;
+}
+
+div.desc {
+    font-style:italic;
+}

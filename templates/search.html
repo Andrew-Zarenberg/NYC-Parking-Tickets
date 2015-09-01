@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>{{ plate }}</title>
+
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+
+    <div id="main">
+
+
+      <div id="top">
+	<div id="topleft"><a href="/">Main Page</a></div>
+	<form action="search" method="get">
+	  License Plate:
+	  <input type="text" name="plate" maxlength="8" size="8" />
+	  <input type="submit" value="Search" />
+	</form>
+      </div>
+
+
+      <div id="plate">{{ plate }}</div>
+
+
+      <table id="violations" cellspacing="0">
+	<tr>
+	  <th>&nbsp;</th>
+	  <th>Date</th>
+	  <th>Time</th>
+	  <th>Violation</th>
+	  <th>Borough</th>
+	  <th>Location</th>
+	  <th>Fine</th>
+	</tr>
+
+	{{ violation_table | safe}}
+
+	<tr>
+	  <th colspan="6" style="text-align:right;">Total Fines</th>
+	  <td class="fine">${{ total_fines }}</td>
+	</tr>
+      </table>
+
+    </div>
+
+  </body>
+</html>
